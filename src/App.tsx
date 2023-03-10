@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { ThemeProvider } from "styled-components";
 import { BrowserRouter } from "react-router-dom";
-import { Button } from "./components/Button";
 import { Router } from "./components/Router";
 
 import { GlobalStyle } from "./styles/global";
@@ -12,8 +11,6 @@ export const App = () => {
 
   return (
     <ThemeProvider theme={defaultTheme}>
-      <Button color="primary" />
-
       <BrowserRouter>
         <Router />
       </BrowserRouter>
